@@ -238,7 +238,7 @@ class AllJobs extends Component {
           type="button"
           onClick={this.onRetryJobs}
         >
-          retry
+          Retry
         </button>
       </div>
     </div>
@@ -310,7 +310,7 @@ class AllJobs extends Component {
             type="radio"
             onChange={this.onGetRadioOption}
           />
-          <label className="label" htmlFor={eachItem.salaryRangeId}>
+          <label className="label" key="label" htmlFor={eachItem.salaryRangeId}>
             {eachItem.label}
           </label>
         </li>
